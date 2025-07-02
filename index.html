@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794') no-repeat center center/cover;
+            color: #333;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav a {
+            color: #ffda79;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            margin: 2rem auto;
+            max-width: 1200px;
+        }
+        .sidebar {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            margin-right: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .main-content {
+            flex: 3;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .post {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1rem;
+        }
+        .post h2 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Blog</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Fiction</a></li>
+            <li><a href="#">Non-Fiction</a></li>
+            <li><a href="#">Self-Help</a></li>
+            <li><a href="#">Reviews</a></li>
+        </ul>
+
+        <h3>Featured Posts</h3>
+        <ul>
+            <li><a href="#">5 Must-Read Classics</a></li>
+            <li><a href="#">Best Books of 2024</a></li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <article class="post">
+            <h2>The Joy of Reading</h2>
+            <p><em>Posted on: December 3, 2024</em></p>
+            <p>Books open a magical world where imagination thrives. Dive into new adventures, learn, and grow through every page you read.</p>
+        </article>
+
+        <article class="post">
+            <h2>Why Fiction is Important</h2>
+            <p><em>Posted on: November 28, 2024</em></p>
+            <p>Fiction stories give us new perspectives, build empathy, and provide a safe escape from the pressures of reality. Explore why they matter!</p>
+        </article>
+    </section>
+</div>
+
+<footer>
+    <p>© 2024 My Blog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+

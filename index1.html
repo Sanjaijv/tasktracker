@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto & Forex Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Crypto & Forex Tracker</h1>
+
+    <!-- Bitcoin Section -->
+    <section class="crypto-section">
+      <h2>Bitcoin Price</h2>
+      <canvas id="bitcoinChart" width="400" height="200"></canvas>
+      <div id="bitcoin-prediction" class="prediction-box">Loading prediction...</div>
+    </section>
+
+    <!-- Forex Section -->
+    <section class="forex-section">
+      <h2>Forex Rates</h2>
+      <label for="forex-pair">Select Forex Pair:</label>
+      <select id="forex-pair">
+        <option value="EUR/USD">EUR/USD</option>
+        <option value="GBP/USD">GBP/USD</option>
+        <option value="USD/JPY">USD/JPY</option>
+      </select>
+      <canvas id="forexChart" width="400" height="200"></canvas>
+      <div id="forex-prediction" class="prediction-box">Loading prediction...</div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
